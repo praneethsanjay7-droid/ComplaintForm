@@ -1,3 +1,7 @@
 this is my first project file using git
 this is praneeth sanjay dasari!!
 i am learning git
+if your file is in the working directory use git diff to know all the cahges happened to the file
+if your file is int the staging area -use git diff --staged
+
+how to rempove a file from the git repository:
