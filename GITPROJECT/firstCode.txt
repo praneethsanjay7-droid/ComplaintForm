@@ -5,3 +5,7 @@ if your file is in the working directory use git diff to know all the cahges hap
 if your file is int the staging area -use git diff --staged
 
 how to rempove a file from the git repository:
+
+inorder to add all the files: git add firstCode.txt,then repeat the same for other files
+
+inorder to add all the files in the folder to the staging area:git add.
