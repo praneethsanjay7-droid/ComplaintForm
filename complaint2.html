@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complaint Form</title>
+    <link rel="stylesheet" href="complaint.css">
+</head>
+
+<body>
+    <header>
+        <h1>Cyber Fraud Complaint Form</h1>
+    </header>
+
+    <div class="comForm">
+        <main>
+            <h2>Mandatory Information</h2>
+            
+            <form action="">
+                <div class="MandatoryInformation">
+                    <div class="part1">
+                        <label class="incidentDate">Incident Date-Time: <input type="date"></label><br><br>
+                        <label class="incidentTime">Incident Time: <input type="time"></label><br><br>
+                    </div>
+
+                    <label for="docs">
+                        Soft copy of any national Id (Voter ID, Driving Licence, Passport, PAN Card, Aadhar Card)
+                        (Not more than 5MB) <input type="file" name="document">
+                    </label><br>
+                </div>
+
+                <h2>Details for Financial Fraud</h2><br>
+                <div class="FinancialFraud">
+                    <label id="BankAcc">Enter Bank account number: <input type="text"></label> <br><br>
+
+                    <div class="part1">
+                        <label class="email">Enter the Email of the reporter: <input type="text"></label><br><br>
+                        <label class="Bname">Name of the bank: <input type="text"></label><br><br>
+                    </div>
+
+                    <div class="part2">
+                        <label id="Tid">Enter 12 digit Transaction ID: <input type="text"></label><br><br>
+                        <label id="Tdate">Enter the date of Transaction: <input type="date"></label>
+                    </div><br><br>
+
+                    <label id="Mnum">Enter the Mobile number of the reporter: <input type="text"></label><br><br>
+                    <label id="Famount">Fraud amount: <input type="number"></label><br><br>
+
+                    <label id="Evidence">Soft copy of all the relevant evidences:
+                        <div>
+                            <input type="file" name="Evidence1">
+                            <input type="file" name="Evidence2">
+                        </div>
+                    </label><br><br>
+
+                    <label>Type of Fraud:
+                        <select id="frauds">
+                            <option value="1">Sim Swap</option>
+                            <option value="2">Smishing</option>
+                            <option value="3">Vishing</option>
+                            <option value="4">Phishing</option>
+                            <option value="5">Money Mule</option>
+                            <option value="6">Trojan</option>
+                            <option value="7">Other</option>
+                        </select>
+                    </label>
+                </div><br>
+            </form>
+        </main>
+
+        <h2>Suspect Details (if Available)</h2>
+        <footer>
+            <div class="part1">
+                <label id="Snum">Enter the Suspect Mobile Number: <input type="text"></label><br><br>
+                <label id="Semail">Enter the Email of the Suspect: <input type="text"></label><br>
+            </div><br>
+
+            <label id="SAcc">Enter Suspect Bank account number: <input type="text"></label><br><br>
+
+            <label id="sID">Provide any document through which the suspect can be identified:</label><br>
+            <input type="file" name="sID"><br><br>
+
+            <label for="incidentDetails">
+                <textarea name="incidentDetails" id="incidentDet"
+                    placeholder="Enter the description of the incident"></textarea>
+            </label><br>
+        </footer>
+
+        <div class="submission">
+            <input type="submit" value="Submit" id="submit">
+            <input type="reset" value="Reset" id="reset">
+        </div>
+    </div>
+</body>
+
+</html>
